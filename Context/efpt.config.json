@@ -1,0 +1,231 @@
+﻿{
+   "CodeGenerationMode": 3,
+   "ContextClassName": "Capmas-TestContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": true,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Models",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "Context",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 2,
+   "SelectedToBeGenerated": 0,
+   "T4TemplatePath": null,
+   "Tables": [
+      {
+         "ExcludedColumns": [
+            "created_by",
+            "created_at",
+            "updated_by",
+            "updated_at"
+         ],
+         "Name": "[dbo].[indicator_translations]",
+         "ObjectType": 0
+      },
+      {
+         "ExcludedColumns": [
+            "created_by",
+            "created_at",
+            "updated_by",
+            "updated_at",
+            "publish_date"
+         ],
+         "Name": "[dbo].[indicators]",
+         "ObjectType": 0
+      },
+      {
+         "ExcludedColumns": [
+            "is_internal",
+            "is_pinned",
+            "home_page",
+            "order",
+            "no_views",
+            "created_by",
+            "created_at",
+            "updated_by",
+            "updated_at",
+            "is_pdf",
+            "pdf_url",
+            "is_send"
+         ],
+         "Name": "[dbo].[news]",
+         "ObjectType": 0
+      },
+      {
+         "ExcludedColumns": [
+            "created_by",
+            "created_at",
+            "updated_by",
+            "updated_at",
+            "pdf_url"
+         ],
+         "Name": "[dbo].[news_translations]",
+         "ObjectType": 0
+      },
+      {
+         "ExcludedColumns": [
+            "created_by",
+            "created_at",
+            "updated_by",
+            "updated_at"
+         ],
+         "Name": "[dbo].[periodic_translations]",
+         "ObjectType": 0
+      },
+      {
+         "ExcludedColumns": [
+            "in_days",
+            "created_by",
+            "created_at",
+            "updated_by",
+            "updated_at",
+            "publish_date",
+            "is_system"
+         ],
+         "Name": "[dbo].[periodics]",
+         "ObjectType": 0
+      },
+      {
+         "ExcludedColumns": [
+            "created_by",
+            "created_at",
+            "updated_by",
+            "updated_at",
+            "is_home"
+         ],
+         "Name": "[dbo].[publication_details]",
+         "ObjectType": 0
+      },
+      {
+         "ExcludedColumns": [
+            "created_by",
+            "created_at",
+            "updated_by",
+            "updated_at",
+            "publish_date"
+         ],
+         "Name": "[dbo].[publication_indicators]",
+         "ObjectType": 0
+      },
+      {
+         "ExcludedColumns": [
+            "created_by",
+            "created_at",
+            "updated_by",
+            "updated_at"
+         ],
+         "Name": "[dbo].[publication_tags]",
+         "ObjectType": 0
+      },
+      {
+         "ExcludedColumns": [
+            "created_by",
+            "created_at",
+            "updated_by",
+            "updated_at"
+         ],
+         "Name": "[dbo].[publication_translations]",
+         "ObjectType": 0
+      },
+      {
+         "ExcludedColumns": [
+            "created_by",
+            "created_at",
+            "updated_by",
+            "updated_at"
+         ],
+         "Name": "[dbo].[publication_type_translations]",
+         "ObjectType": 0
+      },
+      {
+         "ExcludedColumns": [
+            "created_by",
+            "created_at",
+            "updated_by",
+            "updated_at",
+            "publish_date"
+         ],
+         "Name": "[dbo].[publication_types]",
+         "ObjectType": 0
+      },
+      {
+         "ExcludedColumns": [
+            "created_by",
+            "created_at",
+            "updated_by",
+            "updated_at",
+            "cd_price",
+            "paper_price"
+         ],
+         "Name": "[dbo].[publications]",
+         "ObjectType": 0
+      },
+      {
+         "ExcludedColumns": [
+            "created_by",
+            "created_at",
+            "updated_by",
+            "updated_at"
+         ],
+         "Name": "[dbo].[subject_translations]",
+         "ObjectType": 0
+      },
+      {
+         "ExcludedColumns": [
+            "image",
+            "created_by",
+            "created_at",
+            "updated_by",
+            "updated_at",
+            "publish_date"
+         ],
+         "Name": "[dbo].[subjects]",
+         "ObjectType": 0
+      },
+      {
+         "ExcludedColumns": [
+            "created_by",
+            "created_at",
+            "updated_by",
+            "updated_at"
+         ],
+         "Name": "[dbo].[tag_translations]",
+         "ObjectType": 0
+      },
+      {
+         "ExcludedColumns": [
+            "created_by",
+            "created_at",
+            "updated_by",
+            "updated_at"
+         ],
+         "Name": "[dbo].[tags]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": "desktop-b2ps99a.Capmas-Test.dbo",
+   "UncountableWords": null,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDateOnlyTimeOnly": false,
+   "UseDbContextSplitting": false,
+   "UseDecimalDataAnnotationForSprocResult": true,
+   "UseFluentApiOnly": false,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": true,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSchemaNamespaces": false,
+   "UseSpatial": false,
+   "UseT4": false
+}
