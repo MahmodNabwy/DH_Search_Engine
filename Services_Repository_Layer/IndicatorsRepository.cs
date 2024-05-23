@@ -23,21 +23,21 @@ namespace Services_Repository_Layer
 
 
             var publicationIndicators = await _db.PublicationIndicators
-                                      .AsNoTracking()
-                                      .Where(c => !c.IsDeleted && c.IsPublished)
-                                      .Select(c => c.IndicatorId)
-                                      .ToListAsync();
+                                                 .AsNoTracking()
+                                                 .Where(c => !c.IsDeleted && c.IsPublished)
+                                                 .Select(c => c.IndicatorId)
+                                                 .ToListAsync();
 
 
             var listOfIndicators = await (from q in _db.Indicators.AsNoTracking()
                                           where publicationIndicators.Contains(q.Id)
                                           let subjects = _db.PublicationIndicators.AsNoTracking()
-                                                                                                .Where(c => c.IndicatorId == q.Id)
-                                                                                                .Select(c => new SubjectsDTO
-                                                                                                {
-                                                                                                    mainSubjectId = c.PublicationDetail.Publication.Subsubject.MainSubjectId,
-                                                                                                    subSubjectId = c.PublicationDetail.Publication.SubsubjectId
-                                                                                                }).FirstOrDefault()
+                                                                                  .Where(c => c.IndicatorId == q.Id)
+                                                                                  .Select(c => new SubjectsDTO
+                                                                                  {
+                                                                                      mainSubjectId = c.PublicationDetail.Publication.Subsubject.MainSubjectId,
+                                                                                      subSubjectId = c.PublicationDetail.Publication.SubsubjectId
+                                                                                  }).FirstOrDefault()
                                           select new IndicatorSuggestSearchDTO
                                           {
                                               id = q.Id,
@@ -67,15 +67,16 @@ namespace Services_Repository_Layer
 
             var listOfIndicators = await (from q in _db.Indicators.AsNoTracking()
                                           where publicationIndicators.Contains(q.Id)
+
                                           let subjects = _db.PublicationIndicators
                                                              .AsNoTracking()
                                                              .Where(c => c.IndicatorId == q.Id)
                                                              .Select(c => new SubjectsDTO
                                                              {
-                                                                 //SubSubject Refer To Subject Table -__-
                                                                  mainSubjectId = c.PublicationDetail.Publication.Subsubject.MainSubjectId,
                                                                  subSubjectId = c.PublicationDetail.Publication.SubsubjectId
                                                              }).FirstOrDefault()
+
                                           let translations = _db.IndicatorTranslations
                                                                 .AsNoTracking()
                                                                 .Where(c => c.IndicatorId == q.Id)
@@ -93,6 +94,7 @@ namespace Services_Repository_Layer
                                               SubSubjectId = subjects.subSubjectId,
                                               Translations = translations
                                           }).ToListAsync();
+
             engine.AddIndicatorsToIndex(listOfIndicators);
             var resuls = engine.FullSearch(searchTerm, listOfIndicators);
             return resuls;

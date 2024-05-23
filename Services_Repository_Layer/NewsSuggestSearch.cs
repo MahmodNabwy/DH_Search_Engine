@@ -39,8 +39,7 @@ namespace Services_Repository_Layer
         {
             Document doc = new Document();
 
-            doc.Add(new StringField(nameof(term.title), term.title, Field.Store.YES));
-            doc.Add(new StringField(nameof(term.content), term.content, Field.Store.YES));
+            doc.Add(new StringField(nameof(term.title), term.title, Field.Store.YES));            
             doc.Add(new StringField(nameof(term.id), term.id.ToString(), Field.Store.YES));
             writer.AddDocument(doc);
             writer.Commit();
@@ -75,8 +74,7 @@ namespace Services_Repository_Layer
                 foreach (var item in matches)
                 {
                     var filteredNews = listOfNews
-                         .Where(s => s.title.Contains(item, StringComparison.OrdinalIgnoreCase) ||
-                                s.content.Contains(item, StringComparison.OrdinalIgnoreCase))
+                         .Where(s => s.title.Contains(item, StringComparison.OrdinalIgnoreCase))
                          .OrderByDescending(s => s.id)
                          .Select(s => new SuggestSearchDTO
                          {
@@ -86,10 +84,11 @@ namespace Services_Repository_Layer
                          })
                          .Take(3).ToList();
 
-                    foreach (var news in filteredNews)
-                    {
-                        result.Add(news);
-                    }
+                    result.AddRange(filteredNews);
+                    //foreach (var news in filteredNews)
+                    //{
+                    //    result.Add(news);
+                    //}
 
                 }
 

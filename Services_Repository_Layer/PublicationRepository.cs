@@ -247,10 +247,11 @@ namespace Services_Repository_Layer
                                                                title = c.Name.ToLower(),
                                                            })
                                                            .ToListAsync();
+ 
 
             var listOfPublicationTags = await _db.PublicationTags.AsNoTracking()
-                                                                  .Where(c => c.IsDeleted == false)
-                                                                  .ToListAsync();
+                                                                 .Where(c => c.IsDeleted == false)
+                                                                 .ToListAsync();
 
             var listOfTags = await _db.Tags.AsNoTracking()
                                            .Where(c => !c.IsDeleted)

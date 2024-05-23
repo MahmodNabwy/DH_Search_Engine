@@ -77,9 +77,6 @@ namespace Services_Repository_Layer
                                             {
                                                 publicationId = s.publicationId,
                                                 title = s.title,
-
-
-
                                             }).Take(5).ToList();
 
                     var tags = listOfTags
@@ -90,6 +87,7 @@ namespace Services_Repository_Layer
                                             tagId = s.Id,
                                             title = s.TagName,
                                         }).Take(5).ToList();
+
                     var resultFromTags = new List<PublicationTagSuggestSearchDTO>();
                     foreach (var tag in tags)
                     {

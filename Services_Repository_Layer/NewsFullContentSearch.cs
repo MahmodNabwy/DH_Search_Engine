@@ -72,8 +72,7 @@ namespace Services_Repository_Layer
             {
 
                 var filteredResult = listOfNews
-                      .Where(s => s.title.Contains(item, StringComparison.OrdinalIgnoreCase) ||
-                      s.content.Contains(item, StringComparison.OrdinalIgnoreCase))
+                      .Where(s => s.title.Contains(item, StringComparison.OrdinalIgnoreCase))
                       .OrderByDescending(s => s.id)
                       .Select(s => new NewsGlobalSearchDTO
                       {
@@ -89,14 +88,13 @@ namespace Services_Repository_Layer
             var uniqueValues = finalResult.Select(c => c.id).Distinct();
 
             finalResult = listOfNews.Where(c => uniqueValues.Contains(c.id))
-                        .OrderByDescending(s => s.id)
-                        .Select(s => new NewsGlobalSearchDTO
-                        {
-                            id = s.id,
-                            title = s.title,
-
-                        })
-                        .Take(3).ToList();
+                                    .OrderByDescending(s => s.id)
+                                    .Select(s => new NewsGlobalSearchDTO
+                                    {
+                                        id = s.id,
+                                        title = s.title,
+                                    })
+                                   .Take(3).ToList();
 
             return finalResult;
         }

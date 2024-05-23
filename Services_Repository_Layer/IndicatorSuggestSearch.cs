@@ -75,9 +75,8 @@ namespace Services_Repository_Layer
                 TopDocs foundDocs = searcher.Search(query, MaxResults);
 
                 //Get Matched values
-                var matches = foundDocs.ScoreDocs
-                    .Select(scoreDoc => searcher.Doc(scoreDoc.Doc).Get(FieldName))
-                    .ToArray();
+                var matches = foundDocs.ScoreDocs.Select(scoreDoc => searcher.Doc(scoreDoc.Doc).Get(FieldName))
+                                                 .ToArray();
                 foreach (var item in matches)
                 {
                     var filteredIndicators = indicators

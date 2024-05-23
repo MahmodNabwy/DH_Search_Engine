@@ -1,0 +1,15 @@
+D:\Back-End\Capmas_Search_Engine\DH_Search_Engine\Context\bin\Debug\net6.0\Context.deps.json
+D:\Back-End\Capmas_Search_Engine\DH_Search_Engine\Context\bin\Debug\net6.0\Context.runtimeconfig.json
+D:\Back-End\Capmas_Search_Engine\DH_Search_Engine\Context\bin\Debug\net6.0\Context.dll
+D:\Back-End\Capmas_Search_Engine\DH_Search_Engine\Context\bin\Debug\net6.0\Context.pdb
+D:\Back-End\Capmas_Search_Engine\DH_Search_Engine\Context\obj\Debug\net6.0\Context.csproj.AssemblyReference.cache
+D:\Back-End\Capmas_Search_Engine\DH_Search_Engine\Context\obj\Debug\net6.0\Context.GeneratedMSBuildEditorConfig.editorconfig
+D:\Back-End\Capmas_Search_Engine\DH_Search_Engine\Context\obj\Debug\net6.0\Context.AssemblyInfoInputs.cache
+D:\Back-End\Capmas_Search_Engine\DH_Search_Engine\Context\obj\Debug\net6.0\Context.AssemblyInfo.cs
+D:\Back-End\Capmas_Search_Engine\DH_Search_Engine\Context\obj\Debug\net6.0\Context.csproj.CoreCompileInputs.cache
+D:\Back-End\Capmas_Search_Engine\DH_Search_Engine\Context\obj\Debug\net6.0\Context.sourcelink.json
+D:\Back-End\Capmas_Search_Engine\DH_Search_Engine\Context\obj\Debug\net6.0\Context.dll
+D:\Back-End\Capmas_Search_Engine\DH_Search_Engine\Context\obj\Debug\net6.0\refint\Context.dll
+D:\Back-End\Capmas_Search_Engine\DH_Search_Engine\Context\obj\Debug\net6.0\Context.pdb
+D:\Back-End\Capmas_Search_Engine\DH_Search_Engine\Context\obj\Debug\net6.0\Context.genruntimeconfig.cache
+D:\Back-End\Capmas_Search_Engine\DH_Search_Engine\Context\obj\Debug\net6.0\ref\Context.dll

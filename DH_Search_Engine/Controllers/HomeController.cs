@@ -105,7 +105,6 @@ namespace DH_Search_Engine.Controllers
                 var publicationResults = await _publicationRepository.FullContentTitleSearch(searchTerm);
                 var indicatorsResult = await _indicatorsRepository.FullContentTitleSearch(searchTerm);
                 var finalResponse = new List<GlobalSearchDTO>();
-                var x = publicationResults.Item1;
                 finalResponse.Add(new GlobalSearchDTO
                 {
                     news = newsResult,

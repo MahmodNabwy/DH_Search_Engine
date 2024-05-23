@@ -49,8 +49,8 @@ namespace Services_Repository_Layer
             foreach (var item in engineResult)
             {
                 var news = await _db.News.AsNoTracking()
-                                    .Where(c => c.Id == item.id)
-                                    .FirstOrDefaultAsync();
+                                         .Where(c => c.Id == item.id)
+                                         .FirstOrDefaultAsync();
                 if (news is not null)
                 {
                     newsTranslations = await _db.NewsTranslations
